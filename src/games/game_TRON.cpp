@@ -3,6 +3,11 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7735.h>
 
+/*
+* TODO: Update game display so that it's supported by new display module
+*
+*/
+
 // --- Your working pinout ---
 static const int TFT_SCK  = 36;
 static const int TFT_MOSI = 35;
@@ -61,7 +66,7 @@ void fakeInput(Player &p) {
     if (r == 1) {
       // turn left
       p.dir = (Dir)((p.dir + 3) & 3);
-    } 
+    }
     else if (r == 2) {
       // turn right
       p.dir = (Dir)((p.dir + 1) & 3);
