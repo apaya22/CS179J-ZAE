@@ -33,7 +33,7 @@ void initSnakeGame() {
   // Initialize snake in center
   for (int i = 0; i < 3; i++) {
     snakeGame.snake[i].x = 120 - (i * 8);
-    snakeGame.snake[i].y = 135;  
+    snakeGame.snake[i].y = 135;
   }
 
   // Random apple position (within game board bounds: x 0-240, y 30-240)
